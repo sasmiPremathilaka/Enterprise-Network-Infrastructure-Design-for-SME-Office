@@ -1,0 +1,13 @@
+! VLAN Creation
+vlan 10
+ name STAFF
+vlan 20
+ name ADMIN
+vlan 30
+ name NETWORK_DEVICES
+vlan 40
+ name GUEST
+vlan 50
+ name IOT
+vlan 99
+ name NATIVE_UNUSED
