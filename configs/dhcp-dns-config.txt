@@ -1,0 +1,16 @@
+# DHCP Configuration
+
+VLAN 10:
+Range: 192.168.10.50 - 192.168.10.200
+Gateway: 192.168.10.1
+DNS: 192.168.10.1, 8.8.8.8
+
+VLAN 20:
+Range: 192.168.20.20 - 192.168.20.50
+
+VLAN 40:
+Range: 192.168.40.10 - 192.168.40.150
+
+# DNS
+Primary: NGFW Internal Resolver
+Secondary: 8.8.8.8
