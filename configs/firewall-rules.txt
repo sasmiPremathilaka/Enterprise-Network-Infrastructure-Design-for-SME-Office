@@ -1,0 +1,12 @@
+# Example Firewall Rules (Conceptual)
+
+ALLOW VLAN10 -> Internet (HTTPS, DNS)
+ALLOW VLAN20 -> All VLANs (Admin Access)
+DENY VLAN40 -> Internal Networks
+ALLOW VLAN40 -> Internet ONLY
+
+ENABLE NAT for internal networks
+
+ENABLE VPN:
+- SSL VPN for remote users
+- MFA enabled
