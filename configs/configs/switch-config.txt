@@ -1,0 +1,21 @@
+! Access Port Example (Staff)
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+
+! Trunk Port Example
+interface GigabitEthernet0/1
+ switchport mode trunk
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,40,50
+
+! LACP Configuration
+interface Port-channel1
+ switchport mode trunk
+
+interface GigabitEthernet0/2
+ channel-group 1 mode active
+
+interface GigabitEthernet0/3
+ channel-group 1 mode active
